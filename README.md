@@ -28,10 +28,18 @@ The core of Cyrene is a **Random Forest Classifier** that calculates the specifi
 
 ---
 
-##  VIP Mobile Experience (Conceptual UI)
-Since the model identifies the top-tier "Stars" and "High-Probability" customers, we designed a conceptual mobile interface to showcase how this data could be used in a real-world product:
-- **Exclusive Recommendations:** Personalized product feeds based on the customer's "Tribe."
-- **Limited VIP Offers:** Targeted promotions for customers with high probability scores.
+## Management Console (Web Interface)
+Powered by **Streamlit**, this web application serves as the "brain" for marketing teams. 
+- **Real-time Scoring:** Instantly calculates the VIP probability for any customer.
+- **Tribe Analytics:** Visualizes the distribution of "Pure Performers," "Gearheads," and other segments.
+- **Actionable Insights:** Lists the top 10 potential "Star" customers for immediate retention campaigns.
+> *File: `cyrene.py`*
+
+## VIP Mobile App (Customer Experience)
+While the web engine handles the data, the mobile application delivers the value.
+- **Limited Edition Access:** Offers custom product feeds based on the customer's predicted "Tribe."
+- **Elite Status Rewards:** Personalized interface for customers with a probability score above 0.80.
+- **Visual Prototype:** Showcased via high-fidelity UI/UX screenshots in the `assets/` folder.
 
 > [!TIP]
 > *The mobile application UI serves as a bridge between data science and product design, demonstrating the commercial viability of the model.*
@@ -49,3 +57,4 @@ Since the model identifies the top-tier "Stars" and "High-Probability" customers
 - **Visualization:** Power BI
 
 - **Data Source:** AdventureWorks Dataset
+
